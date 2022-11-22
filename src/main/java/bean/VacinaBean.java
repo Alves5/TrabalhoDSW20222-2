@@ -49,7 +49,7 @@ public class VacinaBean {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy' - 'HH:mm:ss");
 			Vacina v = VacinaDAO.buscarMaior();
 			String dataCadastro = sdf.format(v.getDataCadastro());
-			addInfoMessage("Sucesso", "Vacina 1: "+v.getVacina1()+" - Vacina 2: "+v.getVacina2()+" - Data Cadastro: "+dataCadastro);
+			addInfoMessage("Sucesso","ID: "+v.getId()+ " - Vacina 1: "+v.getVacina1()+" - Vacina 2: "+v.getVacina2()+" - Data Cadastro: "+dataCadastro);
 		} catch (Exception e) {
 			addErrorMessage("Erro", "Problemas em exibir as informações.");
 		}

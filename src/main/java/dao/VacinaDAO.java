@@ -15,13 +15,6 @@ public class VacinaDAO {
 		em.getTransaction().commit();
 		em.close();
 	}
-	public static void update(Vacina v) {
-		EntityManager em = JPAUtil.criarEntityManager();
-		em.getTransaction().begin();
-		em.merge(v);
-		em.getTransaction().commit();
-		em.close();
-	}
 	public static void remove(Vacina v) {
 		EntityManager em = JPAUtil.criarEntityManager();
 		em.getTransaction().begin();
